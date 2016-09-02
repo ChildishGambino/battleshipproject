@@ -10,6 +10,7 @@ var gameBoardContainer = document.getElementById("gameboard");
 // with the 2D array
 
 
+
 var letterConversion = {
 	"A": 0,
 	"B": 1,
@@ -69,6 +70,8 @@ var userInput = $("#myInputBox").val();
 var rowLetter = userInput.substring(0,1);
 var column = userInput.substring(1,2);
 var row = letterConversion[rowLetter];
+gameBoard = [row][column]
+
 
 
 	// Your game logic will go here!
