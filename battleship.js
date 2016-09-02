@@ -8,6 +8,8 @@ var gameBoardContainer = document.getElementById("gameboard");
 
 // you can use this to convert your letters into numbers for use
 // with the 2D array
+
+
 var letterConversion = {
 	"A": 0,
 	"B": 1,
@@ -63,6 +65,11 @@ var gameBoard = [
 				]
 
 function fireTorpedo() {
+var userInput = $("#myInputBox").val();
+var rowLetter = userInput.substring(0,1);
+var column = userInput.substring(1,2);
+var row = letterConversion[rowLetter];
+
 
 	// Your game logic will go here!
 
