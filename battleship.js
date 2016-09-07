@@ -67,13 +67,22 @@ var gameBoard = [
 
 function fireTorpedo() {
 var userInput = $("#myInputBox").val();
+
 var rowLetter = userInput.substring(0,1);
 var column = userInput.substring(1,2);
+
 var row = letterConversion[rowLetter];
 gameBoard = [row][column]
 
+var twoDimensionalArray = [
+["a", "b", "c"],
+["d", "e", "f"],
+["g", "h", "i"]
+];
+
+var battleshipGuess = gameBoard[row][column];
 
 
-	// Your game logic will go here!
+		// Your game logic will go here!
 
-}
+	}
