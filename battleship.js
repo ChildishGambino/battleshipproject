@@ -72,17 +72,19 @@ var rowLetter = userInput.substring(0,1);
 var column = userInput.substring(1,2);
 
 var row = letterConversion[rowLetter];
-gameBoard = [row][column]
-
-var twoDimensionalArray = [
-["a", "b", "c"],
-["d", "e", "f"],
-["g", "h", "i"]
-];
-
-var battleshipGuess = gameBoard[row][column];
 
 
-		// Your game logic will go here!
+var battleshipGuess = gameBoard[row][column]
+
+var myDivString = "#s" + row + column;
+
+if(battleshipGuess == 1){
+   $(myDivString).css("background-color", "red");
+
+}
+
+
+
+
 
 	}
