@@ -2,7 +2,7 @@
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
-
+var hitCount = 0;
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
 
@@ -39,7 +39,7 @@ var letterArray = ["A","B","C","D","E","F","G","H","I","J"]
 		square.className = "boardSquare";
 
 		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE
-    square.textContent = i + 1 + letterArray[j]
+    square.textContent = letterArray[j] + (i)
 
 		// set each grid square's coordinates: multiples of the current row or column number
 		var topPosition = j * squareSize;
@@ -74,7 +74,7 @@ var column = userInput.substring(1,2);
 var row = letterConversion[rowLetter];
 
 
-var battleshipGuess = gameBoard[row][column]
+var battleshipGuess = gameBoard[row][column];
 
 var myDivString = "#s" + row + column;
 
@@ -84,6 +84,9 @@ if(battleshipGuess == 1){
 }
 
 
+if (hitCount == 17){
+	
+}
 
 
 
